@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1519202859555.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C934E590",
+    "lastKnownWriteTime" : 1519203109,
+    "last_content_update" : 1519203109605,
+    "path" : "~/Fiisoft/practice-R/OReilly-sample/usefulFunctions.R",
+    "project_path" : "usefulFunctions.R",
+    "properties" : {
+        "cursorPosition" : "4,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
