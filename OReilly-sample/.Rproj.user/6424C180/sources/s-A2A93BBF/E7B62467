@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1519210460970.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E7B62467",
+    "lastKnownWriteTime" : 1519211612,
+    "last_content_update" : 1519211612993,
+    "path" : "~/Fiisoft/practice-R/OReilly-sample/slotMachine.R",
+    "project_path" : "slotMachine.R",
+    "properties" : {
+        "cursorPosition" : "14,1",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
