@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1519182816706.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D423D13D",
+    "lastKnownWriteTime" : 1519184768,
+    "last_content_update" : 1519184768323,
+    "path" : "~/Fiisoft/practice-R/OReilly-sample/weightedDice.R",
+    "project_path" : "weightedDice.R",
+    "properties" : {
+        "cursorPosition" : "6,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

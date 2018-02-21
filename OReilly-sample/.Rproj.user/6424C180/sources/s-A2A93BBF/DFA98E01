@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1519184474819.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DFA98E01",
+    "lastKnownWriteTime" : 1519184512,
+    "last_content_update" : 1519184512965,
+    "path" : "~/Fiisoft/practice-R/OReilly-sample/cards.R",
+    "project_path" : "cards.R",
+    "properties" : {
+        "cursorPosition" : "0,48",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
