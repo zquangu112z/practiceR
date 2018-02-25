@@ -10,6 +10,7 @@ attach(Smarket)
 # devide the dataset into training set and testing set
 training <- Year<2005
 # fit the model by Logistic Regression
+# without passing in the family argument, glm performs linear regression
 glm.fit <- glm(Direction~Lag1+Lag2, data = Smarket, family = binomial, subset = training)
 summary(glm.fit)
 
