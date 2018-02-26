@@ -13,7 +13,7 @@ fit <- glm(V4~V1+V2+V3, data = MaleOrFemaleTrain  ,family = binomial)
 MaleOrFemaleResult <- read.table("~/Fiisoft/practice-R/Fiisoft/MaleOrFemaleResult.ml",
                                 quote="\"", comment.char="", stringsAsFactors=TRUE)
 pairs(MaleOrFemaleResult, col = MaleOrFemaleResult$V4)
-MaleOrFemaleResult$V4 <- factor(MaleOrFemaleResult$V4, labels = c("M","F") )
+MaleOrFemaleResult$V4 <- factor(MaleOrFemaleResult$V4, labels = c("F") )
 probs <- predict(fit, newdata=MaleOrFemaleResult, type = "response")
 pred <- ifelse(probs<0.5,"M","F")
 
