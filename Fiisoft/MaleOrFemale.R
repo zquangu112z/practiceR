@@ -1,20 +1,28 @@
-MaleOrFemaleTrain <- read.table("~/Fiisoft/practice-R/Fiisoft/MaleOrFemaleTrain.ml",
-                                quote="\"", comment.char="", stringsAsFactors=TRUE)
-pairs(MaleOrFemaleTrain, col = MaleOrFemaleTrain$V4)
-MaleOrFemaleTrain$V4 <- factor(MaleOrFemaleTrain$V4, labels = c("M","F") )
+# Load data
+MaleOrFemaleTrain <- read.table(
+  "MaleOrFemaleTrain.ml",
+  quote = "\"",
+  comment.char = "",
+  stringsAsFactors = TRUE
+)
+MaleOrFemaleTrain$V4 <- factor(MaleOrFemaleTrain$V4)
+
+MaleOrFemaleResult <- read.table(
+  "MaleOrFemaleResult.ml",
+  quote = "\"",
+  comment.char = "",
+  stringsAsFactors = TRUE
+)
+MaleOrFemaleResult$V4 <- factor(MaleOrFemaleResult$V4)
+
+# Train
 attach(MaleOrFemaleTrain)
-
-
-
-fit <- glm(V4~V1+V2+V3, data = MaleOrFemaleTrain  ,family = binomial)
-
+fit <- glm(V4 ~ V1 + V2 + V3, data = MaleOrFemaleTrain, family = binomial)
 
 # Test
-MaleOrFemaleResult <- read.table("~/Fiisoft/practice-R/Fiisoft/MaleOrFemaleResult.ml",
-                                quote="\"", comment.char="", stringsAsFactors=TRUE)
-pairs(MaleOrFemaleResult, col = MaleOrFemaleResult$V4)
-MaleOrFemaleResult$V4 <- factor(MaleOrFemaleResult$V4, labels = c("F") )
-probs <- predict(fit, newdata=MaleOrFemaleResult, type = "response")
-pred <- ifelse(probs<0.5,"M","F")
+probs <- predict(fit, newdata = MaleOrFemaleResult, type = "response")
+print(probs)
+pred <- ifelse(probs < 0.5, 1, 2)
 
+# Confusion matrix
 table(pred, MaleOrFemaleResult$V4)
