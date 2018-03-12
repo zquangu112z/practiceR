@@ -33,6 +33,17 @@ Source: CRAN
 Version: 0.2.0
 Hash: e8805df54c65ac96d50235c44a82615c
 
+Package: audio
+Source: CRAN
+Version: 0.1-5
+Hash: 9bfdee08c847cc05073bb78abc04b2c8
+
+Package: beepr
+Source: CRAN
+Version: 1.2
+Hash: 01dddbcdecbb5c51ce495fa1d96fe92b
+Requires: audio, stringr
+
 Package: boot
 Source: CRAN
 Version: 1.3-20
