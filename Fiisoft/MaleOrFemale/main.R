@@ -1,18 +1,18 @@
 # Load data
-MaleOrFemaleTrain <- read.table(
-  "MaleOrFemaleTrain.ml",
-  quote = "\"",
-  comment.char = "",
-  stringsAsFactors = TRUE
-)
+load.dat <- function(dat_dir){
+  dat <- read.table(
+    dat_dir,
+    quote = "\"",
+    comment.char = "",
+    stringsAsFactors = TRUE
+  )
+  dat
+}
+
+MaleOrFemaleTrain <- load.dat("Fiisoft/MaleOrFemale/MaleOrFemaleTrain.ml")
 MaleOrFemaleTrain$V4 <- factor(MaleOrFemaleTrain$V4)
 
-MaleOrFemaleResult <- read.table(
-  "MaleOrFemaleResult.ml",
-  quote = "\"",
-  comment.char = "",
-  stringsAsFactors = TRUE
-)
+MaleOrFemaleResult <- load.dat("Fiisoft/MaleOrFemale/MaleOrFemaleResult.ml")
 MaleOrFemaleResult$V4 <- factor(MaleOrFemaleResult$V4)
 
 # Train
